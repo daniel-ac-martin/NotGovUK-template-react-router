@@ -1,0 +1,44 @@
+{
+  "name": "not-govuk-template-react-router",
+  "version": "0.1.0",
+  "description": "A React Router Framework application with NotGovUK components.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "start": "react-router-serve ./dist/server/index.js",
+    "test": "npm run test:unit",
+    "test:ci": "npm test && npm run test:functional:ci",
+    "test:functional": "cypress run ${CYPRESS_PROJECT_ID:+--record ${CYPRESS_FLAGS}}",
+    "test:functional:ci": "start-server-and-test 'start' 'http-get://localhost:3000/' test:functional",
+    "test:unit": "jest --passWithNoTests",
+    "clean": "rm -rf dist",
+    "cypress": "cypress open",
+    "typecheck": "react-router typegen && tsc"
+  },
+  "dependencies": {
+    "@not-govuk/components": "0.18.1",
+    "@react-router/fs-routes": "7.13.2",
+    "@react-router/node": "7.13.2",
+    "@react-router/serve": "7.13.2",
+    "isbot": "5.1.42",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "react-router": "7.13.2"
+  },
+  "devDependencies": {
+    "@react-router/dev": "7.13.2",
+    "@types/node": "24.13.1",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "cypress": "15.17.0",
+    "jest": "30.4.2",
+    "jest-environment-jsdom": "30.4.1",
+    "sass-embedded": "1.100.0",
+    "start-server-and-test": "3.0.9",
+    "ts-jest": "29.4.11",
+    "typescript": "5.9.3",
+    "vite": "7.3.1"
+  }
+}
