@@ -1,0 +1,48 @@
+name: Set-up
+description: Set-up for building, testing and deployment of standalone react-foundry apps
+inputs:
+  node:
+    description: The version of Node.js to use.
+    required: false
+    default: 24
+  frozen-lockfile:
+    description: Whether to require a frozen lock-file
+    required: false
+runs:
+  using: composite
+  steps:
+
+    - name: Set locale
+      shell: bash
+      run: |
+        sudo locale-gen ${{ env.LANG }}
+        sudo update-locale LANG=${{ env.LANG }}
+
+    - name: Setup package lock-file
+      shell: bash
+      run: |
+        cp package-lock-committed.json package-lock.json
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v6
+      with:
+        node-version: ${{ inputs.node }}
+        cache: 'npm'
+
+    - name: Cache Cypress.io
+      uses: actions/cache@v5
+      env:
+        cache-hash: ${{ hashFiles('pnpm-lock.yaml') }}
+      with:
+        path: '~/.cache/Cypress'
+        key: cypress-os_${{ runner.os }}-lock_${{ env.cache-hash }}
+
+    - name: Pull dependencies
+      if: ${{ !inputs.frozen-lockfile || inputs.frozen-lockfile == 'false' }}
+      shell: bash
+      run: 'npm install'
+
+    - name: Pull dependencies (frozen lock-file)
+      if: ${{ inputs.frozen-lockfile && inputs.frozen-lockfile != 'false' }}
+      shell: bash
+      run: 'npm ci'

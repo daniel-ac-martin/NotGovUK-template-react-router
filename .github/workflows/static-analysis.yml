@@ -1,0 +1,22 @@
+name: Static analysis
+on:
+  pull_request:
+  push:
+    branches: [ 'master' ]
+jobs:
+  analyse:
+    name: Analyse
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    strategy:
+      fail-fast: false
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Scan code-base
+        uses: ./.github/actions/scan-code
