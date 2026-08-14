@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import {
   isRouteErrorResponse,
   Links,
@@ -7,10 +6,13 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-import { GovUKPage } from '@not-govuk/components';
+import { GovUKPage } from "@not-govuk/components";
 
 import type { Route } from "./+types/root";
 import "./app.scss";
+
+export const links: Route.LinksFunction = () => [
+];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -56,11 +58,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
             }
           ]}
           organisationHref="/"
-          organisationText="!GOV.UK"
           phase="alpha"
           serviceName="React Router App"
           serviceHref="/"
-          title="NotGovUK"
         >
           {children}
         </GovUKPage>
@@ -72,10 +72,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  useEffect(() => {
-    document.body.classList.add('js-enabled');
-  }, []);
-
   return <Outlet />;
 }
 

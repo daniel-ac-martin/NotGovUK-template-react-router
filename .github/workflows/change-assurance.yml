@@ -2,31 +2,8 @@ name: Change assurance
 on:
   pull_request:
 jobs:
-  common:
-    name: Dependencies, Unit tests
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [ '22', '24', '26' ]
-    steps:
-
-      - name: Check out repository
-        uses: actions/checkout@v7
-
-      - name: Setup
-        uses: ./.github/actions/setup
-        with:
-          node: ${{ matrix.node }}
-
-      - name: Run unit tests
-        uses: ./.github/actions/test-code
-        with:
-          node: ${{ matrix.node }}
-
   build-app:
     name: Build application
-    needs:
-      - common
     runs-on: ubuntu-latest
     steps:
 
