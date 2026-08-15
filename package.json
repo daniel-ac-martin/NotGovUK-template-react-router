@@ -14,7 +14,7 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@not-govuk/components": "0.19.0",
+    "@not-govuk/components": "0.19.1",
     "@react-router/fs-routes": "8.3.0",
     "@react-router/node": "8.3.0",
     "@react-router/serve": "8.3.0",
