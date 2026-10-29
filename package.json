@@ -30,7 +30,7 @@
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "cypress": "16.1.1",
-    "sass-embedded": "1.106.1",
+    "sass-embedded": "1.107.0",
     "start-server-and-test": "3.0.13",
     "typescript": "7.0.2",
     "vite": "8.3.5"
