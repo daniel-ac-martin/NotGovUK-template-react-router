@@ -7,7 +7,7 @@
       "name": "not-govuk-template-react-router",
       "dependencies": {
         "@not-govuk/components": "0.19.5",
-        "@react-foundry/router": "0.6.6",
+        "@react-foundry/router": "0.7.1",
         "@react-router/fs-routes": "8.5.0",
         "@react-router/node": "8.5.0",
         "@react-router/serve": "8.5.0",
@@ -474,52 +474,6 @@
         "@storybook/addon-docs": {
           "optional": true
         }
-      }
-    },
-    "node_modules/@not-govuk/back-link/node_modules/@react-foundry/client-component-helpers": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/client-component-helpers/-/client-component-helpers-0.7.1.tgz",
-      "integrity": "sha512-CjPbGJcfhArigXYqBUnaQ0XkZF35hBTvVXTZXVgonsnSbtEtOaDlZpZ5/QWEE67LPYSQUWMC1/we4cK1vu1ZKA==",
-      "license": "MIT",
-      "peerDependencies": {
-        "react": "^19.3.1"
-      }
-    },
-    "node_modules/@not-govuk/back-link/node_modules/@react-foundry/router": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/router/-/router-0.7.1.tgz",
-      "integrity": "sha512-Lz/E6vV8r2qYTqINuA1SW1u4UqBYBAAX8bCUZRtbPqw5yEOZkGNXFdh8nS95HPvV05yEHWrjXUJcPBQFf3t56g==",
-      "license": "MIT",
-      "dependencies": {
-        "@react-foundry/client-component-helpers": "^0.7.1",
-        "@react-foundry/uri": "^0.7.1"
-      },
-      "engines": {
-        "node": ">=12.0.0"
-      },
-      "peerDependencies": {
-        "next": ">15.5",
-        "react-router": ">7.8"
-      },
-      "peerDependenciesMeta": {
-        "next": {
-          "optional": true
-        },
-        "react-router": {
-          "optional": true
-        }
-      }
-    },
-    "node_modules/@not-govuk/back-link/node_modules/@react-foundry/uri": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/uri/-/uri-0.7.1.tgz",
-      "integrity": "sha512-G1ippmkmTirWsYyfjBX7LD+478/GHYMDQAhfwkWlpppclD8aghXKfOXG5LERgUm0bBMbSJ5Nm7maxgcljTa8kA==",
-      "license": "MIT",
-      "dependencies": {
-        "qs": "^6.16.1"
-      },
-      "engines": {
-        "node": ">=12.0.0"
       }
     },
     "node_modules/@not-govuk/breadcrumbs": {
@@ -1181,15 +1135,6 @@
         }
       }
     },
-    "node_modules/@not-govuk/page/node_modules/@react-foundry/client-component-helpers": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/client-component-helpers/-/client-component-helpers-0.7.1.tgz",
-      "integrity": "sha512-CjPbGJcfhArigXYqBUnaQ0XkZF35hBTvVXTZXVgonsnSbtEtOaDlZpZ5/QWEE67LPYSQUWMC1/we4cK1vu1ZKA==",
-      "license": "MIT",
-      "peerDependencies": {
-        "react": "^19.3.1"
-      }
-    },
     "node_modules/@not-govuk/pagination": {
       "version": "0.19.5",
       "resolved": "https://registry.npmjs.org/@not-govuk/pagination/-/pagination-0.19.5.tgz",
@@ -1215,18 +1160,6 @@
         "@storybook/addon-docs": {
           "optional": true
         }
-      }
-    },
-    "node_modules/@not-govuk/pagination/node_modules/@react-foundry/uri": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/uri/-/uri-0.7.1.tgz",
-      "integrity": "sha512-G1ippmkmTirWsYyfjBX7LD+478/GHYMDQAhfwkWlpppclD8aghXKfOXG5LERgUm0bBMbSJ5Nm7maxgcljTa8kA==",
-      "license": "MIT",
-      "dependencies": {
-        "qs": "^6.16.1"
-      },
-      "engines": {
-        "node": ">=12.0.0"
       }
     },
     "node_modules/@not-govuk/panel": {
@@ -1592,15 +1525,6 @@
         "@storybook/addon-docs": {
           "optional": true
         }
-      }
-    },
-    "node_modules/@not-govuk/tabs/node_modules/@react-foundry/client-component-helpers": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/client-component-helpers/-/client-component-helpers-0.7.1.tgz",
-      "integrity": "sha512-CjPbGJcfhArigXYqBUnaQ0XkZF35hBTvVXTZXVgonsnSbtEtOaDlZpZ5/QWEE67LPYSQUWMC1/we4cK1vu1ZKA==",
-      "license": "MIT",
-      "peerDependencies": {
-        "react": "^19.3.1"
       }
     },
     "node_modules/@not-govuk/tag": {
@@ -2124,102 +2048,10 @@
         }
       }
     },
-    "node_modules/@react-foundry/anchor-list/node_modules/@react-foundry/client-component-helpers": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/client-component-helpers/-/client-component-helpers-0.7.1.tgz",
-      "integrity": "sha512-CjPbGJcfhArigXYqBUnaQ0XkZF35hBTvVXTZXVgonsnSbtEtOaDlZpZ5/QWEE67LPYSQUWMC1/we4cK1vu1ZKA==",
-      "license": "MIT",
-      "peerDependencies": {
-        "react": "^19.3.1"
-      }
-    },
-    "node_modules/@react-foundry/anchor-list/node_modules/@react-foundry/router": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/router/-/router-0.7.1.tgz",
-      "integrity": "sha512-Lz/E6vV8r2qYTqINuA1SW1u4UqBYBAAX8bCUZRtbPqw5yEOZkGNXFdh8nS95HPvV05yEHWrjXUJcPBQFf3t56g==",
-      "license": "MIT",
-      "dependencies": {
-        "@react-foundry/client-component-helpers": "^0.7.1",
-        "@react-foundry/uri": "^0.7.1"
-      },
-      "engines": {
-        "node": ">=12.0.0"
-      },
-      "peerDependencies": {
-        "next": ">15.5",
-        "react-router": ">7.8"
-      },
-      "peerDependenciesMeta": {
-        "next": {
-          "optional": true
-        },
-        "react-router": {
-          "optional": true
-        }
-      }
-    },
-    "node_modules/@react-foundry/anchor-list/node_modules/@react-foundry/uri": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/uri/-/uri-0.7.1.tgz",
-      "integrity": "sha512-G1ippmkmTirWsYyfjBX7LD+478/GHYMDQAhfwkWlpppclD8aghXKfOXG5LERgUm0bBMbSJ5Nm7maxgcljTa8kA==",
-      "license": "MIT",
-      "dependencies": {
-        "qs": "^6.16.1"
-      },
-      "engines": {
-        "node": ">=12.0.0"
-      }
-    },
-    "node_modules/@react-foundry/anchor/node_modules/@react-foundry/client-component-helpers": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/client-component-helpers/-/client-component-helpers-0.7.1.tgz",
-      "integrity": "sha512-CjPbGJcfhArigXYqBUnaQ0XkZF35hBTvVXTZXVgonsnSbtEtOaDlZpZ5/QWEE67LPYSQUWMC1/we4cK1vu1ZKA==",
-      "license": "MIT",
-      "peerDependencies": {
-        "react": "^19.3.1"
-      }
-    },
-    "node_modules/@react-foundry/anchor/node_modules/@react-foundry/router": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/router/-/router-0.7.1.tgz",
-      "integrity": "sha512-Lz/E6vV8r2qYTqINuA1SW1u4UqBYBAAX8bCUZRtbPqw5yEOZkGNXFdh8nS95HPvV05yEHWrjXUJcPBQFf3t56g==",
-      "license": "MIT",
-      "dependencies": {
-        "@react-foundry/client-component-helpers": "^0.7.1",
-        "@react-foundry/uri": "^0.7.1"
-      },
-      "engines": {
-        "node": ">=12.0.0"
-      },
-      "peerDependencies": {
-        "next": ">15.5",
-        "react-router": ">7.8"
-      },
-      "peerDependenciesMeta": {
-        "next": {
-          "optional": true
-        },
-        "react-router": {
-          "optional": true
-        }
-      }
-    },
-    "node_modules/@react-foundry/anchor/node_modules/@react-foundry/uri": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/uri/-/uri-0.7.1.tgz",
-      "integrity": "sha512-G1ippmkmTirWsYyfjBX7LD+478/GHYMDQAhfwkWlpppclD8aghXKfOXG5LERgUm0bBMbSJ5Nm7maxgcljTa8kA==",
-      "license": "MIT",
-      "dependencies": {
-        "qs": "^6.16.1"
-      },
-      "engines": {
-        "node": ">=12.0.0"
-      }
-    },
     "node_modules/@react-foundry/client-component-helpers": {
-      "version": "0.6.6",
-      "resolved": "https://registry.npmjs.org/@react-foundry/client-component-helpers/-/client-component-helpers-0.6.6.tgz",
-      "integrity": "sha512-5lYIAJd48Wzf7x9NEIvLx5rj9Q2qz/kxfbMVkjmd5BgK1utzcmqcXq9SyS17zBslAP8eg8aA9moTFXXJiWVTJg==",
+      "version": "0.7.1",
+      "resolved": "https://registry.npmjs.org/@react-foundry/client-component-helpers/-/client-component-helpers-0.7.1.tgz",
+      "integrity": "sha512-CjPbGJcfhArigXYqBUnaQ0XkZF35hBTvVXTZXVgonsnSbtEtOaDlZpZ5/QWEE67LPYSQUWMC1/we4cK1vu1ZKA==",
       "license": "MIT",
       "peerDependencies": {
         "react": "^19.3.1"
@@ -2250,16 +2082,7 @@
         "react-router": "^8.5.0"
       }
     },
-    "node_modules/@react-foundry/forms/node_modules/@react-foundry/client-component-helpers": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/client-component-helpers/-/client-component-helpers-0.7.1.tgz",
-      "integrity": "sha512-CjPbGJcfhArigXYqBUnaQ0XkZF35hBTvVXTZXVgonsnSbtEtOaDlZpZ5/QWEE67LPYSQUWMC1/we4cK1vu1ZKA==",
-      "license": "MIT",
-      "peerDependencies": {
-        "react": "^19.3.1"
-      }
-    },
-    "node_modules/@react-foundry/forms/node_modules/@react-foundry/router": {
+    "node_modules/@react-foundry/router": {
       "version": "0.7.1",
       "resolved": "https://registry.npmjs.org/@react-foundry/router/-/router-0.7.1.tgz",
       "integrity": "sha512-Lz/E6vV8r2qYTqINuA1SW1u4UqBYBAAX8bCUZRtbPqw5yEOZkGNXFdh8nS95HPvV05yEHWrjXUJcPBQFf3t56g==",
@@ -2267,43 +2090,6 @@
       "dependencies": {
         "@react-foundry/client-component-helpers": "^0.7.1",
         "@react-foundry/uri": "^0.7.1"
-      },
-      "engines": {
-        "node": ">=12.0.0"
-      },
-      "peerDependencies": {
-        "next": ">15.5",
-        "react-router": ">7.8"
-      },
-      "peerDependenciesMeta": {
-        "next": {
-          "optional": true
-        },
-        "react-router": {
-          "optional": true
-        }
-      }
-    },
-    "node_modules/@react-foundry/forms/node_modules/@react-foundry/uri": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/@react-foundry/uri/-/uri-0.7.1.tgz",
-      "integrity": "sha512-G1ippmkmTirWsYyfjBX7LD+478/GHYMDQAhfwkWlpppclD8aghXKfOXG5LERgUm0bBMbSJ5Nm7maxgcljTa8kA==",
-      "license": "MIT",
-      "dependencies": {
-        "qs": "^6.16.1"
-      },
-      "engines": {
-        "node": ">=12.0.0"
-      }
-    },
-    "node_modules/@react-foundry/router": {
-      "version": "0.6.6",
-      "resolved": "https://registry.npmjs.org/@react-foundry/router/-/router-0.6.6.tgz",
-      "integrity": "sha512-Jwfw4Jr6W4lCf41zn8G+dPEDDCR/lAd1nOGbvQIbTOd3kBF5SIdPbtep2KKn7NreEjIUn+qqZ0+W4afV5zup6Q==",
-      "license": "MIT",
-      "dependencies": {
-        "@react-foundry/client-component-helpers": "^0.6.6",
-        "@react-foundry/uri": "^0.6.6"
       },
       "engines": {
         "node": ">=12.0.0"
@@ -2344,9 +2130,9 @@
       }
     },
     "node_modules/@react-foundry/uri": {
-      "version": "0.6.6",
-      "resolved": "https://registry.npmjs.org/@react-foundry/uri/-/uri-0.6.6.tgz",
-      "integrity": "sha512-ep9anBraDZtINoB2iU7aCi9vHjcB8N4l/PNGpmtWmsbtLuWPYmg4+EUotCUkSs8hYGkYMtPyufxacKd/ZWEBCw==",
+      "version": "0.7.1",
+      "resolved": "https://registry.npmjs.org/@react-foundry/uri/-/uri-0.7.1.tgz",
+      "integrity": "sha512-G1ippmkmTirWsYyfjBX7LD+478/GHYMDQAhfwkWlpppclD8aghXKfOXG5LERgUm0bBMbSJ5Nm7maxgcljTa8kA==",
       "license": "MIT",
       "dependencies": {
         "qs": "^6.16.1"
